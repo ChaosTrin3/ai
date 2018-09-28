@@ -5,11 +5,11 @@ import pygame
 prog_name = "AI Chess Trainer"
 version = "ALPHA 0.0.1"
 
-screen_size = [650, 645]
+screen_size = [600, 600]
 
 square_start_pixel = [60, 60]
 square_end_pixel = [595, 590]
-square_size = [67, 67] #square
+square_size = [60, 60] #square
 square_centers = [[[square_start_pixel[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]/2], [square_start_pixel[0]+square_size[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]/2], [square_start_pixel[0]+2*square_size[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]/2], [square_start_pixel[0]+3*square_size[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]/2], [square_start_pixel[0]+4*square_size[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]/2], [square_start_pixel[0]+5*square_size[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]/2], [square_start_pixel[0]+6*square_size[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]/2], [square_start_pixel[0]+7*square_size[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]/2]],
                   [[square_start_pixel[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]+square_size[1]/2], [square_start_pixel[0]+square_size[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]+square_size[1]/2], [square_start_pixel[0]+2*square_size[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]+square_size[1]/2], [square_start_pixel[0]+3*square_size[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]+square_size[1]/2], [square_start_pixel[0]+4*square_size[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]+square_size[1]/2], [square_start_pixel[0]+5*square_size[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]+square_size[1]/2], [square_start_pixel[0]+6*square_size[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]+square_size[1]/2], [square_start_pixel[0]+7*square_size[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]+square_size[1]/2]],
                   [[square_start_pixel[0]+square_size[0]/2, square_start_pixel[1]+2*square_size[1]+square_size[1]/2], [square_start_pixel[0]+square_size[0]+square_size[0]/2, square_start_pixel[1]+2*square_size[1]+square_size[1]/2], [square_start_pixel[0]+2*square_size[1]+square_size[1]/2, square_start_pixel[1]+2*square_size[1]+square_size[1]/2], [square_start_pixel[0]+3*square_size[1]+square_size[1]/2, square_start_pixel[1]+2*square_size[1]+square_size[1]/2], [square_start_pixel[0]+4*square_size[1]+square_size[1]/2, square_start_pixel[1]+2*square_size[1]+square_size[1]/2], [square_start_pixel[0]+5*square_size[1]+square_size[1]/2, square_start_pixel[1]+2*square_size[1]+square_size[1]/2], [square_start_pixel[0]+6*square_size[1]+square_size[1]/2, square_start_pixel[1]+2*square_size[1]+square_size[1]/2], [square_start_pixel[0]+7*square_size[1]+square_size[1]/2, square_start_pixel[1]+2*square_size[1]+square_size[1]/2]],
@@ -51,38 +51,40 @@ def main():
             print("is_checkmate? :: " + checkmate_tag)
 
 def drawBoard(screen, board):
-    drawImage(screen, "chess_background_w.jpg", 0, 0)
+    drawImage(screen, "chess-board-background.png", 0, 0, 180)
     for square in range(64):
         row = chess.square_rank(square)
         col = chess.square_file(square)
         piece = board.piece_at(square)
         if piece == chess.Piece(chess.PAWN, chess.WHITE):
-            drawImage(screen, "chess_pieces\Chess_plt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1]) #draw a white pawn at the square
+            drawImage(screen, "chess_pieces\Chess_plt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1], 0) #draw a white pawn at the square
         elif piece == chess.Piece(chess.KNIGHT, chess.WHITE):
-            drawImage(screen, "chess_pieces\Chess_nlt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1]) #draw a white knight at the square
+            drawImage(screen, "chess_pieces\Chess_nlt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1], 0) #draw a white knight at the square
         elif piece == chess.Piece(chess.BISHOP, chess.WHITE):
-            drawImage(screen, "chess_pieces\Chess_blt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1]) #draw a white bishop at the square
+            drawImage(screen, "chess_pieces\Chess_blt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1], 0) #draw a white bishop at the square
         elif piece == chess.Piece(chess.ROOK, chess.WHITE):
-            drawImage(screen, "chess_pieces\Chess_rlt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1]) #draw a white rooke at the square
+            drawImage(screen, "chess_pieces\Chess_rlt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1], 0) #draw a white rooke at the square
         elif piece == chess.Piece(chess.QUEEN, chess.WHITE):
-            drawImage(screen, "chess_pieces\Chess_qlt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1]) #draw a white queen at the square
+            drawImage(screen, "chess_pieces\Chess_qlt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1], 0) #draw a white queen at the square
         elif piece == chess.Piece(chess.KING, chess.WHITE):
-            drawImage(screen, "chess_pieces\Chess_klt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1]) #draw a white king at the square
+            drawImage(screen, "chess_pieces\Chess_klt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1], 0) #draw a white king at the square
         elif piece == chess.Piece(chess.PAWN, chess.BLACK):
-            drawImage(screen, "chess_pieces\Chess_pdt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1]) #draw a black pawn at the square
+            drawImage(screen, "chess_pieces\Chess_pdt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1], 0) #draw a black pawn at the square
         elif piece == chess.Piece(chess.KNIGHT, chess.BLACK):
-            drawImage(screen, "chess_pieces\Chess_ndt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1]) #draw a black knight at the square
+            drawImage(screen, "chess_pieces\Chess_ndt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1], 0) #draw a black knight at the square
         elif piece == chess.Piece(chess.BISHOP, chess.BLACK):
-            drawImage(screen, "chess_pieces\Chess_bdt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1]) #draw a black bishop at the square
+            drawImage(screen, "chess_pieces\Chess_bdt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1], 0) #draw a black bishop at the square
         elif piece == chess.Piece(chess.ROOK, chess.BLACK):
-            drawImage(screen, "chess_pieces\Chess_rdt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1]) #draw a black rooke at the square
+            drawImage(screen, "chess_pieces\Chess_rdt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1], 0) #draw a black rooke at the square
         elif piece == chess.Piece(chess.QUEEN, chess.BLACK):
-            drawImage(screen, "chess_pieces\Chess_qdt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1]) #draw a black queen at the square
+            drawImage(screen, "chess_pieces\Chess_qdt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1], 0) #draw a black queen at the square
         elif piece == chess.Piece(chess.KING, chess.BLACK):
-            drawImage(screen, "chess_pieces\Chess_kdt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1]) #draw a black king at the square        print(board.piece_at(square))
+            drawImage(screen, "chess_pieces\Chess_kdt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1], 0) #draw a black king at the square        print(board.piece_at(square))
         
-def drawImage(screen, filename, xpos, ypos):
+def drawImage(screen, filename, xpos, ypos, rot):
     img = pygame.image.load(filename)                  #Load board background
+    if rot != 0:
+        img = pygame.transform.rotate(img, rot)
     screen.blit(img, (xpos,ypos))
     pygame.display.flip()
 
