@@ -7,35 +7,20 @@ version = "ALPHA 0.0.1"
 
 screen_size = [650, 645]
 
-square_start_pixel = [50, 50]
-square_end_pixel = [600, 600]
-square_size = 69 #square
-square_centers = [[[square_start_pixel[0]+square_size/2, square_start_pixel[1]+square_size/2], [square_start_pixel[0]+square_size+square_size/2, square_start_pixel[1]+square_size/2], [square_start_pixel[0]+2*square_size+square_size/2, square_start_pixel[1]+square_size/2], [square_start_pixel[0]+3*square_size+square_size/2, square_start_pixel[1]+square_size/2], [square_start_pixel[0]+4*square_size+square_size/2, square_start_pixel[1]+square_size/2], [square_start_pixel[0]+5*square_size+square_size/2, square_start_pixel[1]+square_size/2], [square_start_pixel[0]+6*square_size+square_size/2, square_start_pixel[1]+square_size/2], [square_start_pixel[0]+7*square_size+square_size/2, square_start_pixel[1]+square_size/2]],
-                  [[square_start_pixel[0]+square_size/2, square_start_pixel[1]+square_size+square_size/2], [square_start_pixel[0]+square_size+square_size/2, square_start_pixel[1]+square_size+square_size/2], [square_start_pixel[0]+2*square_size+square_size/2, square_start_pixel[1]+square_size+square_size/2], [square_start_pixel[0]+3*square_size+square_size/2, square_start_pixel[1]+square_size+square_size/2], [square_start_pixel[0]+4*square_size+square_size/2, square_start_pixel[1]+square_size+square_size/2], [square_start_pixel[0]+5*square_size+square_size/2, square_start_pixel[1]+square_size+square_size/2], [square_start_pixel[0]+6*square_size+square_size/2, square_start_pixel[1]+square_size+square_size/2], [square_start_pixel[0]+7*square_size+square_size/2, square_start_pixel[1]+square_size+square_size/2]],
-                  [[square_start_pixel[0]+square_size/2, square_start_pixel[1]+2*square_size+square_size/2], [square_start_pixel[0]+square_size+square_size/2, square_start_pixel[1]+2*square_size+square_size/2], [square_start_pixel[0]+2*square_size+square_size/2, square_start_pixel[1]+2*square_size+square_size/2], [square_start_pixel[0]+3*square_size+square_size/2, square_start_pixel[1]+2*square_size+square_size/2], [square_start_pixel[0]+4*square_size+square_size/2, square_start_pixel[1]+2*square_size+square_size/2], [square_start_pixel[0]+5*square_size+square_size/2, square_start_pixel[1]+2*square_size+square_size/2], [square_start_pixel[0]+6*square_size+square_size/2, square_start_pixel[1]+2*square_size+square_size/2], [square_start_pixel[0]+7*square_size+square_size/2, square_start_pixel[1]+2*square_size+square_size/2]],
-                  [[square_start_pixel[0]+square_size/2, square_start_pixel[1]+3*square_size+square_size/2], [square_start_pixel[0]+square_size+square_size/2, square_start_pixel[1]+3*square_size+square_size/2], [square_start_pixel[0]+2*square_size+square_size/2, square_start_pixel[1]+3*square_size+square_size/2], [square_start_pixel[0]+3*square_size+square_size/2, square_start_pixel[1]+3*square_size+square_size/2], [square_start_pixel[0]+4*square_size+square_size/2, square_start_pixel[1]+3*square_size+square_size/2], [square_start_pixel[0]+5*square_size+square_size/2, square_start_pixel[1]+3*square_size+square_size/2], [square_start_pixel[0]+6*square_size+square_size/2, square_start_pixel[1]+3*square_size+square_size/2], [square_start_pixel[0]+7*square_size+square_size/2, square_start_pixel[1]+3*square_size+square_size/2]],
-                  [[square_start_pixel[0]+square_size/2, square_start_pixel[1]+4*square_size+square_size/2], [square_start_pixel[0]+square_size+square_size/2, square_start_pixel[1]+4*square_size+square_size/2], [square_start_pixel[0]+2*square_size+square_size/2, square_start_pixel[1]+4*square_size+square_size/2], [square_start_pixel[0]+3*square_size+square_size/2, square_start_pixel[1]+4*square_size+square_size/2], [square_start_pixel[0]+4*square_size+square_size/2, square_start_pixel[1]+4*square_size+square_size/2], [square_start_pixel[0]+5*square_size+square_size/2, square_start_pixel[1]+4*square_size+square_size/2], [square_start_pixel[0]+6*square_size+square_size/2, square_start_pixel[1]+4*square_size+square_size/2], [square_start_pixel[0]+7*square_size+square_size/2, square_start_pixel[1]+4*square_size+square_size/2]],
-                  [[square_start_pixel[0]+square_size/2, square_start_pixel[1]+5*square_size+square_size/2], [square_start_pixel[0]+square_size+square_size/2, square_start_pixel[1]+5*square_size+square_size/2], [square_start_pixel[0]+2*square_size+square_size/2, square_start_pixel[1]+5*square_size+square_size/2], [square_start_pixel[0]+3*square_size+square_size/2, square_start_pixel[1]+5*square_size+square_size/2], [square_start_pixel[0]+4*square_size+square_size/2, square_start_pixel[1]+5*square_size+square_size/2], [square_start_pixel[0]+5*square_size+square_size/2, square_start_pixel[1]+5*square_size+square_size/2], [square_start_pixel[0]+6*square_size+square_size/2, square_start_pixel[1]+5*square_size+square_size/2], [square_start_pixel[0]+7*square_size+square_size/2, square_start_pixel[1]+5*square_size+square_size/2]],
-                  [[square_start_pixel[0]+square_size/2, square_start_pixel[1]+6*square_size+square_size/2], [square_start_pixel[0]+square_size+square_size/2, square_start_pixel[1]+6*square_size+square_size/2], [square_start_pixel[0]+2*square_size+square_size/2, square_start_pixel[1]+6*square_size+square_size/2], [square_start_pixel[0]+3*square_size+square_size/2, square_start_pixel[1]+6*square_size+square_size/2], [square_start_pixel[0]+4*square_size+square_size/2, square_start_pixel[1]+6*square_size+square_size/2], [square_start_pixel[0]+5*square_size+square_size/2, square_start_pixel[1]+6*square_size+square_size/2], [square_start_pixel[0]+6*square_size+square_size/2, square_start_pixel[1]+6*square_size+square_size/2], [square_start_pixel[0]+7*square_size+square_size/2, square_start_pixel[1]+6*square_size+square_size/2]],
-                  [[square_start_pixel[0]+square_size/2, square_start_pixel[1]+7*square_size+square_size/2], [square_start_pixel[0]+square_size+square_size/2, square_start_pixel[1]+7*square_size+square_size/2], [square_start_pixel[0]+2*square_size+square_size/2, square_start_pixel[1]+7*square_size+square_size/2], [square_start_pixel[0]+3*square_size+square_size/2, square_start_pixel[1]+7*square_size+square_size/2], [square_start_pixel[0]+4*square_size+square_size/2, square_start_pixel[1]+7*square_size+square_size/2], [square_start_pixel[0]+5*square_size+square_size/2, square_start_pixel[1]+7*square_size+square_size/2], [square_start_pixel[0]+6*square_size+square_size/2, square_start_pixel[1]+7*square_size+square_size/2], [square_start_pixel[0]+7*square_size+square_size/2, square_start_pixel[1]+7*square_size+square_size/2]]]
+square_start_pixel = [60, 60]
+square_end_pixel = [595, 590]
+square_size = [67, 67] #square
+square_centers = [[[square_start_pixel[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]/2], [square_start_pixel[0]+square_size[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]/2], [square_start_pixel[0]+2*square_size[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]/2], [square_start_pixel[0]+3*square_size[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]/2], [square_start_pixel[0]+4*square_size[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]/2], [square_start_pixel[0]+5*square_size[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]/2], [square_start_pixel[0]+6*square_size[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]/2], [square_start_pixel[0]+7*square_size[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]/2]],
+                  [[square_start_pixel[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]+square_size[1]/2], [square_start_pixel[0]+square_size[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]+square_size[1]/2], [square_start_pixel[0]+2*square_size[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]+square_size[1]/2], [square_start_pixel[0]+3*square_size[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]+square_size[1]/2], [square_start_pixel[0]+4*square_size[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]+square_size[1]/2], [square_start_pixel[0]+5*square_size[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]+square_size[1]/2], [square_start_pixel[0]+6*square_size[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]+square_size[1]/2], [square_start_pixel[0]+7*square_size[0]+square_size[0]/2, square_start_pixel[1]+square_size[1]+square_size[1]/2]],
+                  [[square_start_pixel[0]+square_size[0]/2, square_start_pixel[1]+2*square_size[1]+square_size[1]/2], [square_start_pixel[0]+square_size[0]+square_size[0]/2, square_start_pixel[1]+2*square_size[1]+square_size[1]/2], [square_start_pixel[0]+2*square_size[1]+square_size[1]/2, square_start_pixel[1]+2*square_size[1]+square_size[1]/2], [square_start_pixel[0]+3*square_size[1]+square_size[1]/2, square_start_pixel[1]+2*square_size[1]+square_size[1]/2], [square_start_pixel[0]+4*square_size[1]+square_size[1]/2, square_start_pixel[1]+2*square_size[1]+square_size[1]/2], [square_start_pixel[0]+5*square_size[1]+square_size[1]/2, square_start_pixel[1]+2*square_size[1]+square_size[1]/2], [square_start_pixel[0]+6*square_size[1]+square_size[1]/2, square_start_pixel[1]+2*square_size[1]+square_size[1]/2], [square_start_pixel[0]+7*square_size[1]+square_size[1]/2, square_start_pixel[1]+2*square_size[1]+square_size[1]/2]],
+                  [[square_start_pixel[0]+square_size[0]/2, square_start_pixel[1]+3*square_size[1]+square_size[1]/2], [square_start_pixel[0]+square_size[0]+square_size[0]/2, square_start_pixel[1]+3*square_size[1]+square_size[1]/2], [square_start_pixel[0]+2*square_size[1]+square_size[1]/2, square_start_pixel[1]+3*square_size[1]+square_size[1]/2], [square_start_pixel[0]+3*square_size[1]+square_size[1]/2, square_start_pixel[1]+3*square_size[1]+square_size[1]/2], [square_start_pixel[0]+4*square_size[1]+square_size[1]/2, square_start_pixel[1]+3*square_size[1]+square_size[1]/2], [square_start_pixel[0]+5*square_size[1]+square_size[1]/2, square_start_pixel[1]+3*square_size[1]+square_size[1]/2], [square_start_pixel[0]+6*square_size[1]+square_size[1]/2, square_start_pixel[1]+3*square_size[1]+square_size[1]/2], [square_start_pixel[0]+7*square_size[1]+square_size[1]/2, square_start_pixel[1]+3*square_size[1]+square_size[1]/2]],
+                  [[square_start_pixel[0]+square_size[0]/2, square_start_pixel[1]+4*square_size[1]+square_size[1]/2], [square_start_pixel[0]+square_size[0]+square_size[0]/2, square_start_pixel[1]+4*square_size[1]+square_size[1]/2], [square_start_pixel[0]+2*square_size[1]+square_size[1]/2, square_start_pixel[1]+4*square_size[1]+square_size[1]/2], [square_start_pixel[0]+3*square_size[1]+square_size[1]/2, square_start_pixel[1]+4*square_size[1]+square_size[1]/2], [square_start_pixel[0]+4*square_size[1]+square_size[1]/2, square_start_pixel[1]+4*square_size[1]+square_size[1]/2], [square_start_pixel[0]+5*square_size[1]+square_size[1]/2, square_start_pixel[1]+4*square_size[1]+square_size[1]/2], [square_start_pixel[0]+6*square_size[1]+square_size[1]/2, square_start_pixel[1]+4*square_size[1]+square_size[1]/2], [square_start_pixel[0]+7*square_size[1]+square_size[1]/2, square_start_pixel[1]+4*square_size[1]+square_size[1]/2]],
+                  [[square_start_pixel[0]+square_size[0]/2, square_start_pixel[1]+5*square_size[1]+square_size[1]/2], [square_start_pixel[0]+square_size[0]+square_size[0]/2, square_start_pixel[1]+5*square_size[1]+square_size[1]/2], [square_start_pixel[0]+2*square_size[1]+square_size[1]/2, square_start_pixel[1]+5*square_size[1]+square_size[1]/2], [square_start_pixel[0]+3*square_size[1]+square_size[1]/2, square_start_pixel[1]+5*square_size[1]+square_size[1]/2], [square_start_pixel[0]+4*square_size[1]+square_size[1]/2, square_start_pixel[1]+5*square_size[1]+square_size[1]/2], [square_start_pixel[0]+5*square_size[1]+square_size[1]/2, square_start_pixel[1]+5*square_size[1]+square_size[1]/2], [square_start_pixel[0]+6*square_size[1]+square_size[1]/2, square_start_pixel[1]+5*square_size[1]+square_size[1]/2], [square_start_pixel[0]+7*square_size[1]+square_size[1]/2, square_start_pixel[1]+5*square_size[1]+square_size[1]/2]],
+                  [[square_start_pixel[0]+square_size[0]/2, square_start_pixel[1]+6*square_size[1]+square_size[1]/2], [square_start_pixel[0]+square_size[0]+square_size[0]/2, square_start_pixel[1]+6*square_size[1]+square_size[1]/2], [square_start_pixel[0]+2*square_size[1]+square_size[1]/2, square_start_pixel[1]+6*square_size[1]+square_size[1]/2], [square_start_pixel[0]+3*square_size[1]+square_size[1]/2, square_start_pixel[1]+6*square_size[1]+square_size[1]/2], [square_start_pixel[0]+4*square_size[1]+square_size[1]/2, square_start_pixel[1]+6*square_size[1]+square_size[1]/2], [square_start_pixel[0]+5*square_size[1]+square_size[1]/2, square_start_pixel[1]+6*square_size[1]+square_size[1]/2], [square_start_pixel[0]+6*square_size[1]+square_size[1]/2, square_start_pixel[1]+6*square_size[1]+square_size[1]/2], [square_start_pixel[0]+7*square_size[1]+square_size[1]/2, square_start_pixel[1]+6*square_size[1]+square_size[1]/2]],
+                  [[square_start_pixel[0]+square_size[0]/2, square_start_pixel[1]+7*square_size[1]+square_size[1]/2], [square_start_pixel[0]+square_size[0]+square_size[0]/2, square_start_pixel[1]+7*square_size[1]+square_size[1]/2], [square_start_pixel[0]+2*square_size[1]+square_size[1]/2, square_start_pixel[1]+7*square_size[1]+square_size[1]/2], [square_start_pixel[0]+3*square_size[1]+square_size[1]/2, square_start_pixel[1]+7*square_size[1]+square_size[1]/2], [square_start_pixel[0]+4*square_size[1]+square_size[1]/2, square_start_pixel[1]+7*square_size[1]+square_size[1]/2], [square_start_pixel[0]+5*square_size[1]+square_size[1]/2, square_start_pixel[1]+7*square_size[1]+square_size[1]/2], [square_start_pixel[0]+6*square_size[1]+square_size[1]/2, square_start_pixel[1]+7*square_size[1]+square_size[1]/2], [square_start_pixel[0]+7*square_size[1]+square_size[1]/2, square_start_pixel[1]+7*square_size[1]+square_size[1]/2]]]
 
-# board = chess.Board()
-
-# print(board.legal_moves)
-# print(board)
-
-# ## Scholar's Mate
-# scholars_mate = ["e4", "e5", "Qh5", "Nc6", "Bc4", "Nf6", "Qxf7"]
-
-# for move in scholars_mate:
-#     board.push_san(move)
-#     print(board)
-#     if board.is_checkmate():
-#         checkmate_tag = "True"
-#     else:
-#         checkmate_tag = "False"
-#     print("is_checkmate? :: " + checkmate_tag)
-#     time.sleep(1)
+## Scholar's Mate
+scholars_mate = ["e4", "e5", "Qh5", "Nc6", "Bc4", "Nf6", "Qxf7"]
 
 def main():
 
@@ -44,19 +29,58 @@ def main():
     pygame.display.set_icon(logo)                                   #Set icon
     pygame.display.set_caption(prog_name + "   -   " + version)     #Set program text
     screen = pygame.display.set_mode(screen_size)                     #Set screensize
-    drawBoard(screen)
+    board = chess.Board()
+    drawBoard(screen, board)
     running = True                                                  #Define the game as running
     while running:
         for event in pygame.event.get():                            #loop throughall the events
             if event.type == pygame.QUIT:
                 running = False                                     #Stop running if the QUIT event is received
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                print(pygame.mouse.get_pos())
+    
+        for move in scholars_mate:
+            time.sleep(1)
+            board.push_san(move)
+            drawBoard(screen, board)
+            if board.is_checkmate():
+                checkmate_tag = "True"
+                running = False
+            else:
+                checkmate_tag = "False"
+            print("is_checkmate? :: " + checkmate_tag)
 
-def drawBoard(screen):#board):
+def drawBoard(screen, board):
     drawImage(screen, "chess_background_w.jpg", 0, 0)
-    for row in square_centers:
-        for col in row:
-            drawImage(screen, "chess_pieces\Chess_plt60.png", col[0]-30, col[1]-30) #draw a white pawn everywhere
-
+    for square in range(64):
+        row = chess.square_rank(square)
+        col = chess.square_file(square)
+        piece = board.piece_at(square)
+        if piece == chess.Piece(chess.PAWN, chess.WHITE):
+            drawImage(screen, "chess_pieces\Chess_plt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1]) #draw a white pawn at the square
+        elif piece == chess.Piece(chess.KNIGHT, chess.WHITE):
+            drawImage(screen, "chess_pieces\Chess_nlt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1]) #draw a white knight at the square
+        elif piece == chess.Piece(chess.BISHOP, chess.WHITE):
+            drawImage(screen, "chess_pieces\Chess_blt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1]) #draw a white bishop at the square
+        elif piece == chess.Piece(chess.ROOK, chess.WHITE):
+            drawImage(screen, "chess_pieces\Chess_rlt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1]) #draw a white rooke at the square
+        elif piece == chess.Piece(chess.QUEEN, chess.WHITE):
+            drawImage(screen, "chess_pieces\Chess_qlt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1]) #draw a white queen at the square
+        elif piece == chess.Piece(chess.KING, chess.WHITE):
+            drawImage(screen, "chess_pieces\Chess_klt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1]) #draw a white king at the square
+        elif piece == chess.Piece(chess.PAWN, chess.BLACK):
+            drawImage(screen, "chess_pieces\Chess_pdt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1]) #draw a black pawn at the square
+        elif piece == chess.Piece(chess.KNIGHT, chess.BLACK):
+            drawImage(screen, "chess_pieces\Chess_ndt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1]) #draw a black knight at the square
+        elif piece == chess.Piece(chess.BISHOP, chess.BLACK):
+            drawImage(screen, "chess_pieces\Chess_bdt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1]) #draw a black bishop at the square
+        elif piece == chess.Piece(chess.ROOK, chess.BLACK):
+            drawImage(screen, "chess_pieces\Chess_rdt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1]) #draw a black rooke at the square
+        elif piece == chess.Piece(chess.QUEEN, chess.BLACK):
+            drawImage(screen, "chess_pieces\Chess_qdt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1]) #draw a black queen at the square
+        elif piece == chess.Piece(chess.KING, chess.BLACK):
+            drawImage(screen, "chess_pieces\Chess_kdt60.png", square_start_pixel[0]+col*square_size[0], square_start_pixel[1]+row*square_size[1]) #draw a black king at the square        print(board.piece_at(square))
+        
 def drawImage(screen, filename, xpos, ypos):
     img = pygame.image.load(filename)                  #Load board background
     screen.blit(img, (xpos,ypos))
@@ -109,7 +133,7 @@ def getClickedSquare(clickedPos):#, bool isWhite):
     elif row == "":
         col = ""
     
-    return (col+row)
+    return ([col,row])
 
 if __name__=="__main__":
     main()
