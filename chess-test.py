@@ -1,6 +1,7 @@
 import chess
 import time
 import pygame
+import random
 
 prog_name = "AI Chess Trainer"
 version = "ALPHA 0.0.1"
@@ -39,16 +40,18 @@ def main():
             if event.type == pygame.MOUSEBUTTONDOWN:
                 print(pygame.mouse.get_pos())
     
-        for move in scholars_mate:
-            time.sleep(1)
-            board.push_san(move)
-            drawBoard(screen, board)
-            if board.is_checkmate():
-                checkmate_tag = "True"
-                running = False
-            else:
-                checkmate_tag = "False"
-            print("is_checkmate? :: " + checkmate_tag)
+        legal_moves = []
+        for move in board.legal_moves:
+            legal_moves.append(move)
+        time.sleep(.5)
+        board.push(random.choice(legal_moves))
+        drawBoard(screen, board)
+        if board.is_checkmate():
+            checkmate_tag = "True"
+            running = False
+        else:
+            checkmate_tag = "False"
+        print("is_checkmate? :: " + checkmate_tag)
 
 def drawBoard(screen, board):
     drawImage(screen, "chess-board-background.png", 0, 0, 180)
