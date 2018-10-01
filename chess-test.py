@@ -2,6 +2,8 @@ import chess
 import time
 import pygame
 import random
+import collections
+import numpy as np
 
 prog_name = "AI Chess Trainer"
 version = "ALPHA 0.0.1"
@@ -39,19 +41,20 @@ def main():
                 running = False                                     #Stop running if the QUIT event is received
             if event.type == pygame.MOUSEBUTTONDOWN:
                 print(pygame.mouse.get_pos())
-    
-        legal_moves = []
-        for move in board.legal_moves:
-            legal_moves.append(move)
-        time.sleep(.5)
-        board.push(random.choice(legal_moves))
-        drawBoard(screen, board)
-        if board.is_checkmate():
-            checkmate_tag = "True"
-            running = False
-        else:
-            checkmate_tag = "False"
-        print("is_checkmate? :: " + checkmate_tag)
+        init_games = []        
+        for _ in range(5000):
+            while not board.is_game_over():
+                legal_moves = []
+                for move in board.legal_moves:
+                    legal_moves.append(move)
+                    board.push(random.choice(legal_moves))
+                    #time.sleep(.5)
+                    #drawBoard(screen, board)
+            init_games.append(board.result())
+        running = False
+        games = np.array(init_games)
+        print(collections.Counter(games))
+        
 
 def drawBoard(screen, board):
     drawImage(screen, "chess-board-background.png", 0, 0, 180)
